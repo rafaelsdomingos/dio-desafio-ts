@@ -1,15 +1,7 @@
 
-var apiKey = '3f301be7381a03ad8d352314dcc3ec1d';
-let apiKey;
-let requestToken;
-let username;
-let password;
-let sessionId;
-let listId = '7101979';
-
-let loginButton = document.getElementById('login-button');
-let searchButton = document.getElementById('search-button');
-let searchContainer = document.getElementById('search-container');
+let loginButton = document.getElementById('login-button') as HTMLInputElement;
+let searchButton = document.getElementById('search-button') as HTMLInputElement;
+let searchContainer = document.getElementById('search-container') as HTMLInputElement;
 
 loginButton.addEventListener('click', async () => {
   await criarRequestToken();
